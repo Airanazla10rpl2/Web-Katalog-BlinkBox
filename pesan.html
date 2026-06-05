@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Pemesanan</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#fff5f7;
+    padding:30px;
+}
+
+.container{
+    max-width:500px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    color:#ff6b81;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+button{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#ff6b81;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ff4f6d;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Form Pemesanan Blink Box</h1>
+
+    <form action="terimakasih.html">
+
+        <label>Nama Lengkap</label>
+        <input type="text" required>
+
+        <label>Nomor WhatsApp</label>
+        <input type="tel" required>
+
+        <label>Pilih Produk</label>
+        <select required>
+            <option>WildButCutie</option>
+            <option>Hacipupu Gummy Bear</option>
+            <option>Hirono</option>
+            <option>Sanrio Characters Party</option>
+            <option>PowerPuff Girls</option>
+            <option>Disney Princess</option>
+        </select>
+
+        <label>Jumlah Pesanan</label>
+        <input type="number" min="1" required>
+
+        <label>Alamat Pengiriman</label>
+        <textarea rows="4"></textarea>
+
+       <button type="button" onclick="kirimPesanan()">
+    Kirim Pesanan
+</button>
+
+<script>
+function kirimPesanan(){
+    alert("Pesanan berhasil dikirim!");
+    window.location.href = "terimakasih.html";
+}
+</script>
+    </form>
+
+</div>
+
+</body>
+</html>

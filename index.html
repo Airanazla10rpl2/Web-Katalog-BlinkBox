@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>katalog Blink Box</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:white;
+            color:black
+        }
+
+        header{
+            background-image: url("pop_mart.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 300px;
+
+            color: white;
+            text-align: center;
+
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+        }
+
+        header h1{
+            font-size:40px;
+            margin-bottom:10px;
+        }
+    
+        header p{
+            font-size:40px;
+        }
+           
+         .container{
+            width:100%;
+            max-width:1200px;
+            margin:40px auto;
+            padding:0 20px;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+        }
+
+        .card img{
+            width:50%;
+            height:220px;
+            object-fit:cover;
+        
+        }
+        .content{
+            padding:20px;
+        }
+
+        .content h2{
+            color:black;
+            margin-bottom:10px;
+        }
+
+        .contentp{
+            line-height:1.6;
+            margain-bottom:15px;
+        }
+
+        .price{
+            color:green;
+            font-size:22px;
+            font-weight:bold;
+            margin-bottom:15px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:10px 18px;
+            background:red;
+            color:white;
+            text-decoration:none;
+            border-radius:8px;
+            transition:0.3s;
+        }
+    
+        .btn:hover{
+            background:crimson;
+        }
+
+        footer{
+            background:pink;
+            color:black;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+         }
+         </style>
+    </head>
+
+    <body>
+
+        <header>
+            <h1></h1> 
+            <p></p>
+        </header>
+
+        <section class="container">
+
+            <!-- produk 1 -->
+            <div class="card">
+                <img src="WildButCutie.jpg" alt="WildButCutie BLINKBOX">
+
+                <div class="content">
+                    <h2>WildButCutie</h2>
+
+                    <p>
+                        Memadukan sisi  Fierce dan cute dalam satu koleksi. 
+                        </p>
+
+                        <div class="price">Rp200.000</div>
+
+                        <a href="detail.WildButCutie.html"class="btn">
+                            PESAN
+                        </a>
+                    </div>
+                </div>
+
+                <!-- produk 2 -->
+            <div class="card">
+                <img src="c:\Users\User\Downloads\HaciPupuGummyBear.jpg" alt="HaciPupuGummyBear BLINKBOX">
+
+                <div class="content">
+                    <h2>HaciPupuGummyBear</h2>
+
+                    <p>
+                        tema Gummy bear yang manis dan colorful.
+                        </p>
+
+                        <div class="price">Rp230.000</div>
+
+                        <a href="detail.HaciPupuGummyBear.html"class="btn">
+                            PESAN
+                        </a>
+                    </div>
+                </div>
+
+                  <!-- produk 3 -->
+            <div class="card">
+                <img src="c:\Users\User\Documents\web_ desaign\hirono (2).jpg" alt="Hirono BLINKBOX">
+
+                <div class="content">
+                    <h2>Hirono</h2>
+
+                    <p>
+                        Hirono Echo merupakan seri koleksi eksklusif dengan desain emosional
+                        dan detail artistik yang menawan.
+                        </p>
+
+                        <div class="price">Rp180.000</div>
+
+                        <a href="detail.hirono.html"class="btn">
+                            PESAN
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- produk 4 -->
+            <div class="card">
+                <img src="c:\Users\User\Documents\web_ desaign\SanrioCharactersParty.jpg" alt="SanrioCharactersParty BLINKBOX">
+
+                    <h2>SanrioCharactersParty</h2>
+
+                    <p>
+                        Bertema pesta-pesta dari karakter-karakter favorit Sanrio.
+                        </p>
+
+                        <div class="price">Rp380.000</div>
+
+                        <a href="detail.SanrioCharactersParty.html"class="btn">
+                            PESAN
+                        </a>
+                    </div>
+                </div>
+                
+                  <!-- produk 5 -->
+            <div class="card">
+                <img src="c:\Users\User\Documents\web_ desaign\PowerPuffGirls.jpg" alt="PowerPuffGirls BLINKBOX">
+
+                    <h2>PowerPuffGirls</h2>
+
+                    <p>
+                        fashion item lucu dari The PowerPuffGirls dengan desain vinly face plush bag yang fluffy dan colorful.
+                         </p>
+
+                        <div class="price">Rp350.000</div>
+
+                        <a href="detail.PowerPuffGirls.html"class="btn">
+                            PESAN
+                        </a>
+                    </div>
+                </div>
+
+                  <!-- produk 6 -->
+            <div class="card">
+                <img src="c:\Users\User\Documents\web_ desaign\DisnepPrincess.jpg" alt="DisnepPrincess BLINKBOX">
+
+                    <h2>DisnepPrincess</h2>
+
+                    <p>
+                        Bertema Disney Princess dengan desain cantik dan detail yang elegan.
+                         </p>
+
+                        <div class="price">Rp350.000</div>
+
+                        <a href="detail.DisnepPrincess.html"class="btn">
+                            PESAN
+                        </a>
+                    </div>
+                </div>
+
+                </section>
+                
+                <footer>
+                  <p>AIRA NAZLA SHOLEHA</p> <P> ALAMAT : Jl. Jendral Sudirman Kav.</P>
+                  <p> POP MART Store:
+                    Grand Indonesia
+                    Central Part Mall
+                    Gandaria City
+                    Senayan City <p>
+                        
+              </footer>
+                
+                 </body>
+                 </html>       
+
+
